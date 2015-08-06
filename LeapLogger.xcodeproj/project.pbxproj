@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058EF6401B73B003001AAE4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF63F1B73B003001AAE4E /* AppDelegate.m */; };
+		058EF6421B73B003001AAE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6411B73B003001AAE4E /* main.m */; };
+		058EF6451B73B003001AAE4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6441B73B003001AAE4E /* ViewController.m */; };
+		058EF6471B73B003001AAE4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058EF6461B73B003001AAE4E /* Images.xcassets */; };
+		058EF64A1B73B003001AAE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058EF6481B73B003001AAE4E /* Main.storyboard */; };
+		058EF6561B73B003001AAE4E /* LeapLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6551B73B003001AAE4E /* LeapLoggerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		058EF6501B73B003001AAE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 058EF6311B73B003001AAE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 058EF6381B73B003001AAE4E;
+			remoteInfo = LeapLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058EF6391B73B003001AAE4E /* LeapLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		058EF63D1B73B003001AAE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		058EF63E1B73B003001AAE4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		058EF63F1B73B003001AAE4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		058EF6411B73B003001AAE4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		058EF6431B73B003001AAE4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		058EF6441B73B003001AAE4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		058EF6461B73B003001AAE4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		058EF6491B73B003001AAE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		058EF64F1B73B003001AAE4E /* LeapLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		058EF6541B73B003001AAE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		058EF6551B73B003001AAE4E /* LeapLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeapLoggerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		058EF6361B73B003001AAE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		058EF64C1B73B003001AAE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058EF6301B73B003001AAE4E = {
+			isa = PBXGroup;
+			children = (
+				058EF63B1B73B003001AAE4E /* LeapLogger */,
+				058EF6521B73B003001AAE4E /* LeapLoggerTests */,
+				058EF63A1B73B003001AAE4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		058EF63A1B73B003001AAE4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6391B73B003001AAE4E /* LeapLogger.app */,
+				058EF64F1B73B003001AAE4E /* LeapLoggerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		058EF63B1B73B003001AAE4E /* LeapLogger */ = {
+			isa = PBXGroup;
+			children = (
+				058EF63E1B73B003001AAE4E /* AppDelegate.h */,
+				058EF63F1B73B003001AAE4E /* AppDelegate.m */,
+				058EF6431B73B003001AAE4E /* ViewController.h */,
+				058EF6441B73B003001AAE4E /* ViewController.m */,
+				058EF6461B73B003001AAE4E /* Images.xcassets */,
+				058EF6481B73B003001AAE4E /* Main.storyboard */,
+				058EF63C1B73B003001AAE4E /* Supporting Files */,
+			);
+			path = LeapLogger;
+			sourceTree = "<group>";
+		};
+		058EF63C1B73B003001AAE4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				058EF63D1B73B003001AAE4E /* Info.plist */,
+				058EF6411B73B003001AAE4E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		058EF6521B73B003001AAE4E /* LeapLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6551B73B003001AAE4E /* LeapLoggerTests.m */,
+				058EF6531B73B003001AAE4E /* Supporting Files */,
+			);
+			path = LeapLoggerTests;
+			sourceTree = "<group>";
+		};
+		058EF6531B73B003001AAE4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6541B73B003001AAE4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		058EF6381B73B003001AAE4E /* LeapLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058EF6591B73B003001AAE4E /* Build configuration list for PBXNativeTarget "LeapLogger" */;
+			buildPhases = (
+				058EF6351B73B003001AAE4E /* Sources */,
+				058EF6361B73B003001AAE4E /* Frameworks */,
+				058EF6371B73B003001AAE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeapLogger;
+			productName = LeapLogger;
+			productReference = 058EF6391B73B003001AAE4E /* LeapLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		058EF64E1B73B003001AAE4E /* LeapLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058EF65C1B73B003001AAE4E /* Build configuration list for PBXNativeTarget "LeapLoggerTests" */;
+			buildPhases = (
+				058EF64B1B73B003001AAE4E /* Sources */,
+				058EF64C1B73B003001AAE4E /* Frameworks */,
+				058EF64D1B73B003001AAE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				058EF6511B73B003001AAE4E /* PBXTargetDependency */,
+			);
+			name = LeapLoggerTests;
+			productName = LeapLoggerTests;
+			productReference = 058EF64F1B73B003001AAE4E /* LeapLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		058EF6311B73B003001AAE4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Lucky;
+				TargetAttributes = {
+					058EF6381B73B003001AAE4E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					058EF64E1B73B003001AAE4E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 058EF6381B73B003001AAE4E;
+					};
+				};
+			};
+			buildConfigurationList = 058EF6341B73B003001AAE4E /* Build configuration list for PBXProject "LeapLogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 058EF6301B73B003001AAE4E;
+			productRefGroup = 058EF63A1B73B003001AAE4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				058EF6381B73B003001AAE4E /* LeapLogger */,
+				058EF64E1B73B003001AAE4E /* LeapLoggerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		058EF6371B73B003001AAE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058EF6471B73B003001AAE4E /* Images.xcassets in Resources */,
+				058EF64A1B73B003001AAE4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		058EF64D1B73B003001AAE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		058EF6351B73B003001AAE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058EF6451B73B003001AAE4E /* ViewController.m in Sources */,
+				058EF6421B73B003001AAE4E /* main.m in Sources */,
+				058EF6401B73B003001AAE4E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		058EF64B1B73B003001AAE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				058EF6561B73B003001AAE4E /* LeapLoggerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		058EF6511B73B003001AAE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 058EF6381B73B003001AAE4E /* LeapLogger */;
+			targetProxy = 058EF6501B73B003001AAE4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		058EF6481B73B003001AAE4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				058EF6491B73B003001AAE4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		058EF6571B73B003001AAE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		058EF6581B73B003001AAE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		058EF65A1B73B003001AAE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeapLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		058EF65B1B73B003001AAE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeapLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		058EF65D1B73B003001AAE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LeapLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeapLogger.app/Contents/MacOS/LeapLogger";
+			};
+			name = Debug;
+		};
+		058EF65E1B73B003001AAE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LeapLoggerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeapLogger.app/Contents/MacOS/LeapLogger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		058EF6341B73B003001AAE4E /* Build configuration list for PBXProject "LeapLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058EF6571B73B003001AAE4E /* Debug */,
+				058EF6581B73B003001AAE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		058EF6591B73B003001AAE4E /* Build configuration list for PBXNativeTarget "LeapLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058EF65A1B73B003001AAE4E /* Debug */,
+				058EF65B1B73B003001AAE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		058EF65C1B73B003001AAE4E /* Build configuration list for PBXNativeTarget "LeapLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				058EF65D1B73B003001AAE4E /* Debug */,
+				058EF65E1B73B003001AAE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 058EF6311B73B003001AAE4E /* Project object */;
+}
