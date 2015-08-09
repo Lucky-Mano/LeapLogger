@@ -7,13 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "Listener.h"
 
 @implementation ViewController
+{
+    Listener *listener_;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    listener_ = [[Listener alloc] init];
+    [listener_ run];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

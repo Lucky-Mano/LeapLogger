@@ -12,7 +12,12 @@
 		058EF6451B73B003001AAE4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6441B73B003001AAE4E /* ViewController.m */; };
 		058EF6471B73B003001AAE4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058EF6461B73B003001AAE4E /* Images.xcassets */; };
 		058EF64A1B73B003001AAE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058EF6481B73B003001AAE4E /* Main.storyboard */; };
-		058EF6561B73B003001AAE4E /* LeapLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6551B73B003001AAE4E /* LeapLoggerTests.m */; };
+		058EF66C1B73B954001AAE4E /* Listener.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF66B1B73B954001AAE4E /* Listener.m */; };
+		058EF6721B73FBAA001AAE4E /* CsvLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6711B73FBAA001AAE4E /* CsvLogger.m */; };
+		058EF6761B741F0C001AAE4E /* CsvLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6751B741F0C001AAE4E /* CsvLoggerTests.m */; };
+		058EF67B1B75D44A001AAE4E /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */; };
+		058EF67D1B75D459001AAE4E /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 058EF67C1B75D459001AAE4E /* libLeap.dylib */; };
+		058EF67E1B75D56D001AAE4E /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 058EF67C1B75D459001AAE4E /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +29,19 @@
 			remoteInfo = LeapLogger;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		058EF66D1B73BBC6001AAE4E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				058EF67E1B75D56D001AAE4E /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		058EF6391B73B003001AAE4E /* LeapLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +55,16 @@
 		058EF6491B73B003001AAE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		058EF64F1B73B003001AAE4E /* LeapLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		058EF6541B73B003001AAE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		058EF6551B73B003001AAE4E /* LeapLoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeapLoggerTests.m; sourceTree = "<group>"; };
+		058EF66A1B73B954001AAE4E /* Listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listener.h; sourceTree = "<group>"; };
+		058EF66B1B73B954001AAE4E /* Listener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listener.m; sourceTree = "<group>"; };
+		058EF6701B73FBAA001AAE4E /* CsvLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsvLogger.h; sourceTree = "<group>"; };
+		058EF6711B73FBAA001AAE4E /* CsvLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsvLogger.m; sourceTree = "<group>"; };
+		058EF6751B741F0C001AAE4E /* CsvLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsvLoggerTests.m; sourceTree = "<group>"; };
+		058EF6771B75D44A001AAE4E /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		058EF6781B75D44A001AAE4E /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		058EF6791B75D44A001AAE4E /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		058EF67C1B75D459001AAE4E /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058EF67D1B75D459001AAE4E /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +89,7 @@
 		058EF6301B73B003001AAE4E = {
 			isa = PBXGroup;
 			children = (
+				058EF65F1B73B6A3001AAE4E /* LeapSDK */,
 				058EF63B1B73B003001AAE4E /* LeapLogger */,
 				058EF6521B73B003001AAE4E /* LeapLoggerTests */,
 				058EF63A1B73B003001AAE4E /* Products */,
@@ -79,6 +108,7 @@
 		058EF63B1B73B003001AAE4E /* LeapLogger */ = {
 			isa = PBXGroup;
 			children = (
+				058EF6691B73B941001AAE4E /* Leap */,
 				058EF63E1B73B003001AAE4E /* AppDelegate.h */,
 				058EF63F1B73B003001AAE4E /* AppDelegate.m */,
 				058EF6431B73B003001AAE4E /* ViewController.h */,
@@ -102,7 +132,7 @@
 		058EF6521B73B003001AAE4E /* LeapLoggerTests */ = {
 			isa = PBXGroup;
 			children = (
-				058EF6551B73B003001AAE4E /* LeapLoggerTests.m */,
+				058EF6731B741ED0001AAE4E /* Leap */,
 				058EF6531B73B003001AAE4E /* Supporting Files */,
 			);
 			path = LeapLoggerTests;
@@ -116,6 +146,69 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		058EF65F1B73B6A3001AAE4E /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6601B73B6B3001AAE4E /* include */,
+				058EF6611B73B6BB001AAE4E /* lib */,
+			);
+			name = LeapSDK;
+			sourceTree = "<group>";
+		};
+		058EF6601B73B6B3001AAE4E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6771B75D44A001AAE4E /* Leap.h */,
+				058EF6781B75D44A001AAE4E /* LeapMath.h */,
+				058EF6791B75D44A001AAE4E /* LeapObjectiveC.h */,
+				058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		058EF6611B73B6BB001AAE4E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				058EF67C1B75D459001AAE4E /* libLeap.dylib */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		058EF6691B73B941001AAE4E /* Leap */ = {
+			isa = PBXGroup;
+			children = (
+				058EF66F1B73FB85001AAE4E /* Logger */,
+				058EF66A1B73B954001AAE4E /* Listener.h */,
+				058EF66B1B73B954001AAE4E /* Listener.m */,
+			);
+			name = Leap;
+			sourceTree = "<group>";
+		};
+		058EF66F1B73FB85001AAE4E /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6701B73FBAA001AAE4E /* CsvLogger.h */,
+				058EF6711B73FBAA001AAE4E /* CsvLogger.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		058EF6731B741ED0001AAE4E /* Leap */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6741B741ED9001AAE4E /* Logger */,
+			);
+			name = Leap;
+			sourceTree = "<group>";
+		};
+		058EF6741B741ED9001AAE4E /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				058EF6751B741F0C001AAE4E /* CsvLoggerTests.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +219,7 @@
 				058EF6351B73B003001AAE4E /* Sources */,
 				058EF6361B73B003001AAE4E /* Frameworks */,
 				058EF6371B73B003001AAE4E /* Resources */,
+				058EF66D1B73BBC6001AAE4E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -216,7 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				058EF6451B73B003001AAE4E /* ViewController.m in Sources */,
+				058EF6721B73FBAA001AAE4E /* CsvLogger.m in Sources */,
 				058EF6421B73B003001AAE4E /* main.m in Sources */,
+				058EF67B1B75D44A001AAE4E /* LeapObjectiveC.mm in Sources */,
+				058EF66C1B73B954001AAE4E /* Listener.m in Sources */,
 				058EF6401B73B003001AAE4E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058EF6561B73B003001AAE4E /* LeapLoggerTests.m in Sources */,
+				058EF6761B741F0C001AAE4E /* CsvLoggerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +434,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeapLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -348,6 +449,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LeapLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -407,6 +512,7 @@
 				058EF65B1B73B003001AAE4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		058EF65C1B73B003001AAE4E /* Build configuration list for PBXNativeTarget "LeapLoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +521,7 @@
 				058EF65E1B73B003001AAE4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
