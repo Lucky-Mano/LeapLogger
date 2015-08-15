@@ -9,7 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "LeapObjectiveC.h"
 
+@protocol ListenerDelegate <NSObject>
+
+@optional
+
+- (void) updateHandCountLabel:(NSUInteger)count;
+
+@end
+
 @interface Listener : NSObject<LeapListener>
+
+@property (strong, nonatomic) id<ListenerDelegate> delegate;
 
 - (void) run;
 

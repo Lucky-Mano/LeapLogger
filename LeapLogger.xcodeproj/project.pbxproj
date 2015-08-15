@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0508E7381B7FA53400DC1832 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0508E7371B7FA53400DC1832 /* libLeap.dylib */; };
+		0508E73D1B7FA54200DC1832 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0508E73C1B7FA54200DC1832 /* LeapObjectiveC.mm */; };
+		0508E73E1B7FAED600DC1832 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0508E7371B7FA53400DC1832 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		058EF6401B73B003001AAE4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF63F1B73B003001AAE4E /* AppDelegate.m */; };
 		058EF6421B73B003001AAE4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6411B73B003001AAE4E /* main.m */; };
 		058EF6451B73B003001AAE4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6441B73B003001AAE4E /* ViewController.m */; };
@@ -15,9 +18,6 @@
 		058EF66C1B73B954001AAE4E /* Listener.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF66B1B73B954001AAE4E /* Listener.m */; };
 		058EF6721B73FBAA001AAE4E /* CsvLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6711B73FBAA001AAE4E /* CsvLogger.m */; };
 		058EF6761B741F0C001AAE4E /* CsvLoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EF6751B741F0C001AAE4E /* CsvLoggerTests.m */; };
-		058EF67B1B75D44A001AAE4E /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */; };
-		058EF67D1B75D459001AAE4E /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 058EF67C1B75D459001AAE4E /* libLeap.dylib */; };
-		058EF67E1B75D56D001AAE4E /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 058EF67C1B75D459001AAE4E /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				058EF67E1B75D56D001AAE4E /* libLeap.dylib in CopyFiles */,
+				0508E73E1B7FAED600DC1832 /* libLeap.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0508E7371B7FA53400DC1832 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		0508E7391B7FA54200DC1832 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		0508E73A1B7FA54200DC1832 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		0508E73B1B7FA54200DC1832 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		0508E73C1B7FA54200DC1832 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
 		058EF6391B73B003001AAE4E /* LeapLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058EF63D1B73B003001AAE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		058EF63E1B73B003001AAE4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,11 +65,6 @@
 		058EF6701B73FBAA001AAE4E /* CsvLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsvLogger.h; sourceTree = "<group>"; };
 		058EF6711B73FBAA001AAE4E /* CsvLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsvLogger.m; sourceTree = "<group>"; };
 		058EF6751B741F0C001AAE4E /* CsvLoggerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsvLoggerTests.m; sourceTree = "<group>"; };
-		058EF6771B75D44A001AAE4E /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
-		058EF6781B75D44A001AAE4E /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
-		058EF6791B75D44A001AAE4E /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
-		058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
-		058EF67C1B75D459001AAE4E /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058EF67D1B75D459001AAE4E /* libLeap.dylib in Frameworks */,
+				0508E7381B7FA53400DC1832 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +158,10 @@
 		058EF6601B73B6B3001AAE4E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				058EF6771B75D44A001AAE4E /* Leap.h */,
-				058EF6781B75D44A001AAE4E /* LeapMath.h */,
-				058EF6791B75D44A001AAE4E /* LeapObjectiveC.h */,
-				058EF67A1B75D44A001AAE4E /* LeapObjectiveC.mm */,
+				0508E7391B7FA54200DC1832 /* Leap.h */,
+				0508E73A1B7FA54200DC1832 /* LeapMath.h */,
+				0508E73B1B7FA54200DC1832 /* LeapObjectiveC.h */,
+				0508E73C1B7FA54200DC1832 /* LeapObjectiveC.mm */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 		058EF6611B73B6BB001AAE4E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				058EF67C1B75D459001AAE4E /* libLeap.dylib */,
+				0508E7371B7FA53400DC1832 /* libLeap.dylib */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				058EF6451B73B003001AAE4E /* ViewController.m in Sources */,
 				058EF6721B73FBAA001AAE4E /* CsvLogger.m in Sources */,
 				058EF6421B73B003001AAE4E /* main.m in Sources */,
-				058EF67B1B75D44A001AAE4E /* LeapObjectiveC.mm in Sources */,
+				0508E73D1B7FA54200DC1832 /* LeapObjectiveC.mm in Sources */,
 				058EF66C1B73B954001AAE4E /* Listener.m in Sources */,
 				058EF6401B73B003001AAE4E /* AppDelegate.m in Sources */,
 			);

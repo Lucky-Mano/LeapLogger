@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Listener.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<ListenerDelegate>
 
+@property (weak) IBOutlet NSTextField *hand_count_label;
 
 @end
 

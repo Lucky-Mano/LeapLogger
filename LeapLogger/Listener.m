@@ -19,8 +19,9 @@ static NSString *const kLogDir = @"LeapLog";
     NSMutableString *data_;
     
     long long pre_frame_id_;
-    int pre_hand_id_;
 }
+
+@synthesize delegate;
 
 - (void) run
 {
@@ -97,6 +98,9 @@ static NSString *const kLogDir = @"LeapLog";
     pre_frame_id_ = [frame id];
     
     NSArray *hands = [frame hands];
+    
+    // delegate
+    [delegate updateHandCountLabel:[hands count]];
     
     for (LeapHand *hand in hands) {
         if (![hand isValid]) continue;
