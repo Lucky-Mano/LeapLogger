@@ -51,13 +51,8 @@ static NSString *const kLogDir = @"LeapLog";
 - (void)onConnect:(NSNotification *)notification
 {
     if (DEBUG) NSLog(@"Connected");
-    /* 必要なら
     LeapController *aController = (LeapController *)[notification object];
-    [aController enableGesture:LEAP_GESTURE_TYPE_CIRCLE enable:YES];
-    [aController enableGesture:LEAP_GESTURE_TYPE_KEY_TAP enable:YES];
-    [aController enableGesture:LEAP_GESTURE_TYPE_SCREEN_TAP enable:YES];
-    [aController enableGesture:LEAP_GESTURE_TYPE_SWIPE enable:YES];
-     */
+    [aController setPolicy:LEAP_POLICY_BACKGROUND_FRAMES];
 }
 
 - (void)onDisconnect:(NSNotification *)notification
@@ -94,12 +89,14 @@ static NSString *const kLogDir = @"LeapLog";
     
     // フレームIDが変わっていない時はデータの更新が無いと考える
     if (pre_frame_id_ == [frame id]) return;
-    
     pre_frame_id_ = [frame id];
+    
+    // update FPS
+    [delegate updateFpsDisplay:[frame currentFramesPerSecond]];
     
     NSArray *hands = [frame hands];
     
-    // delegate
+    // update hands count
     [delegate updateHandCountLabel:[hands count]];
     
     for (LeapHand *hand in hands) {
@@ -135,6 +132,11 @@ static NSString *const kLogDir = @"LeapLog";
 - (void)onFocusLost:(NSNotification *)notification
 {
     if (DEBUG) NSLog(@"Focus Lost");
+}
+
+- (void)updateHandCount:(NSArray *)hands
+{
+    [delegate updateHandCountLabel:[hands count]];
 }
 
 #pragma mark - data row

@@ -15,6 +15,8 @@
 
 - (void) updateHandCountLabel:(NSUInteger)count;
 
+- (void) updateFpsDisplay:(float)fps;
+
 @end
 
 @interface Listener : NSObject<LeapListener>

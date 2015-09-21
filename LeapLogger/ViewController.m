@@ -35,11 +35,16 @@
 
 - (void) updateHandCountLabel:(NSUInteger)count {
     if (hand_count_ == count) return;
+    hand_count_ = count;
     
     @synchronized(_hand_count_label){
-        hand_count_ = count;
-        
-        [[self hand_count_label] setStringValue:[[NSNumber numberWithUnsignedInteger:hand_count_] stringValue]];
+        [[self hand_count_label] setStringValue:[NSString stringWithFormat:@"%lu", (unsigned long)count]];
+    }
+}
+
+- (void) updateFpsDisplay:(float)fps {
+    @synchronized(_fps_label) {
+        [[self fps_label] setStringValue:[NSString stringWithFormat:@"%.5f", fps]];
     }
 }
 

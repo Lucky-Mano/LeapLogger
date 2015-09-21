@@ -12,6 +12,7 @@
 @interface ViewController : NSViewController<ListenerDelegate>
 
 @property (weak) IBOutlet NSTextField *hand_count_label;
+@property (weak) IBOutlet NSTextField *fps_label;
 
 @end
 
